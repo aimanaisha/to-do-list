@@ -1,0 +1,106 @@
+
+body{
+    background: url('img/background1.jpg') ;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
+}    
+.todo-item::selection{
+    color: none;
+    background: none;
+}  
+p{
+    font-size: 5rem;
+    color: rgb(69, 53, 59);
+    margin-bottom: 25px;
+    font-family: 'Klee One', cursive;
+    margin-top: 30px;
+}
+
+
+input[type="text"]{
+    background: rgb(204, 198, 200,0.3);
+    color: rgb(70, 54, 60);
+    border: solid rgb(151, 137, 142) 1px;
+    width: 63%;
+    font-family: 'Klee One', cursive;
+    height: 25px;
+    border-radius: px;
+    font-size: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    outline: none;
+}
+
+
+input::placeholder{
+    color: rgb(161, 153, 156);
+}
+
+ul{
+    font-family: 'Yomogi', cursive;
+    font-weight: bold;
+    font-size: 1.43rem;
+    line-height: 43px;
+    color: #6d5459;
+    list-style-type:square;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul img{
+    width: 5px;
+    height: 5px;
+}
+section{
+    width: 57%;
+    margin: 25px;
+}
+
+ 
+.completed{
+    text-decoration: line-through;
+    color: #998e90;
+}
+
+@media(min-width:790px){
+    body{
+        padding-left: 40px;
+    }
+}
+@media(max-width:790px){
+    
+    p{
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    form{
+        text-align: center;
+    }
+    input[type='text']{       
+        width: 90%;
+        text-align: center;
+    }
+}
+@media(max-width:605px){
+    
+    p{
+        font-size: 3rem;
+    }
+    ul{
+        font-size: 1.3rem;
+        line-height: 35px;
+    }
+}
+@media(max-width:480px){
+
+    p{
+        font-size: 2.5rem;
+    }
+    ul{
+        font-size: 1rem;
+        line-height: 29px;
+    }
+}
